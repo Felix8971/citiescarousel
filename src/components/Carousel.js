@@ -55,7 +55,7 @@ class Carousel extends React.Component {
             <div className="Info">
               <div className="city">{item.name}</div>
               <div className="country">{item.country}</div>
-              <img className="stars" src="../../images/4-stars.png"/>
+              <img className="stars" src="../../images/stars.png"/>
               <div className="description">{item.description}</div>
               <div className="starting-from">Starting from</div>
               <div className="price">$14 USD</div>
@@ -77,13 +77,17 @@ class Carousel extends React.Component {
 
       return (
         <div id="container">
-          <button className="arrow" type="button" onClick={this.previous}><img src="../../images/arrow_left.png"/></button>
+          <button className="arrow" type="button" onClick={this.previous}>
+            <img classeName="arrow-img" src="../../images/arrow_left.png"/>
+          </button>
           <div id="slider">
             <div id="figure" style={this.state.style}>
               {cityList}
             </div>
           </div>
-          <button className="arrow" type="button" onClick={this.next}><img src="../../images/arrow_right.png"/></button>
+          <button className="arrow" type="button" onClick={this.next}>
+            <img classeName="arrow-img" src="../../images/arrow_right.png"/>
+          </button>
         </div>
 
       );

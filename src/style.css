@@ -44,14 +44,14 @@ body { margin: 0; font-family: Noto Sans,sans-serif;}
     float: left; 
     display: flex;
     align-items: center;
-    border:1px solid red;
+    /*border:1px solid red;*/
 }
 
 .img {
     width:50%;
     float:left;
     height: auto;
-    
+    border-radius: 4px;
 }
 
 .Info{
@@ -69,51 +69,67 @@ body { margin: 0; font-family: Noto Sans,sans-serif;}
 }
 
 .Info .country {
-    font-size: 20px;
+    font-size: 24px;
+    color: dimgray;
 }
 
 .Info .stars {
-    width: 82px;
-    margin-bottom: 5px;
+    width: 94px;
+    margin-bottom: 17px;
+    margin-top: 7px;
 }
 
 .Info .description {
     font-size: 15px;
-    height:167px;
+    height:120px;
     overflow-y: scroll;
 }
 
 .starting-from{
     margin-top:20px;
-    font-size: 15px;
+    font-size: 14px;
     color:grey;
 }
 
 .price{
     font-size: 30px;
     font-weight: bold;
+    color: #43a27c;
+    margin-bottom: 13px;
 }
 
 .button-bar{
   font-size: 20px;
   display:flex; 
   justify-content: space-between;
+  width: 60%;
 }
 
 .arrow{
- width:30px;
- height:418px; 
- background: none;
- font-size: 82px;
- border-style: none;
- color:darkgrey;
- font-family: monospace;
- border: none;
- padding: 0;
- cursor: pointer;
- outline: inherit;
+    width:30px;
+    height:418px; 
+    background: none;
+    font-size: 82px;
+    border-style: none;
+    color:darkgrey;
+    font-family: monospace;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    outline: inherit;
 }
 
 .button{
+    background: none;
+    border: 1px solid #43a27c;
+    color: #43a27c;
+    border-radius: 3px;
+    padding: 9px;
+    font-size: 17px;
+    font-weight: bold;
+}
 
+button img:hover{
+    
+    background-color:#a9a9a97a;
 }
