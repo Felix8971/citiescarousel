@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 import React from 'react';
 import PropTypes from 'prop-types';
-import { connect } from 'react-redux';
 import fetch from 'isomorphic-fetch';
 import Card from './Card';
 
@@ -42,7 +41,7 @@ class Carousel extends React.Component {
         style: {
           left: left
         },
-        index :  newIndex
+        index: newIndex
       });
     }
 
@@ -50,29 +49,11 @@ class Carousel extends React.Component {
       const self = this;
       const cityList = this.props.cities.map(function(item, i) {
         return (
-          <div className="card" key={i} > 
-            <img className="img" src={item.main_image} />
-            <div className="Info">
-              <div className="city">{item.name}</div>
-              <div className="country">{item.country}</div>
-              <img className="stars" src="../../images/stars.png"/>
-              <div className="description">{item.description}</div>
-              <div className="starting-from">Starting from</div>
-              <div className="price">$14 USD</div>
-              <div className="button-bar">
-                <button className="button">Tours</button>
-                <button className="button">Attractions</button>
-                <button className="button">Transport</button>
-              </div>
-            </div>
-         </div>
+          <Card key={i} item={item}/>
         );
       });
       
-      var divStyle = {
-        left:"-100%"
-      };
-      
+
       console.log(this.state.style);
 
       return (

@@ -33,9 +33,8 @@ const MainContainer = styled.div`
 
 
 const Title =  styled.h1`
-  font-size:40px;
+  font-size:30px;
   margin: 40px 0px auto;
-  color:#5A5E6B;
   @media (max-width: 640px) {
     font-size:25px;
   }
@@ -87,19 +86,13 @@ class App extends Component {
 
   render() {
     const self = this;
-  
-    //const donate = this.props.donate;
-    //const message = this.props.message;
 
     return (
       <MainContainer id="MainContainer">
-
         <Header>
           <Title><strong>Where to go ?</strong> This weeks standout destinations are...</Title>
         </Header>
-
         <Carousel cities={this.state.cities}></Carousel>
-
       </MainContainer>
     );
   }

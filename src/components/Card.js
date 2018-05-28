@@ -5,42 +5,12 @@ import { connect } from 'react-redux';
 import fetch from 'isomorphic-fetch';
 
 
-
-const AA =  styled.div`
-  display: inline-block;
-  width:300px;
-  background-color: green;
-  padding: 5px;
-  border: 1px solid red;
-  height:200px;
-`;
-
-const Img =  styled.img`
-  max-width:50%;
-`;
-
-const Form =  styled.div`
- 
-  width:50%
-`;
-
-
   class Card extends React.Component {
     constructor(props) {
       super(props);
       this.state = {
        
       };
-
-      this.handleOptionChange = this.handleOptionChange.bind(this);
-    }
-
-    handleOptionChange(event,amount) {
-      console.log('value=',event.target.value);
-      this.setState({
-        selectedAmount: parseInt(event.target.value)
-      });
-
     }
 
 
@@ -48,10 +18,22 @@ const Form =  styled.div`
       const self = this;
 
       return (
-        <AA>
-         
-
-        </AA>
+        <div className="card" > 
+          <img className="img" src={this.props.item.main_image}/>
+          <div className="Info">
+            <div className="city">{this.props.item.name}</div>
+            <div className="country">{this.props.item.country}</div>
+            <img className="stars" src="../../images/stars.png"/>
+            <div className="description">{this.props.item.description}</div>
+            <div className="starting-from">Starting from</div>
+            <div className="price">$14 USD</div>
+            <div className="button-bar">
+              <button className="button">Tours</button>
+              <button className="button">Attractions</button>
+              <button className="button">Transport</button>
+            </div>
+          </div>
+        </div>
       );
     }
   }
