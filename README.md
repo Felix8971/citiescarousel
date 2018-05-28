@@ -2,7 +2,7 @@
 A code challenge with react js
 
 ### Pre-requirements
-- node & npm & yarn 
+- node & npm & yarn installed
 
 ### To get started
 
