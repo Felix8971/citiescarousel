@@ -10,5 +10,5 @@ A code challenge with react js
 1. `cd citiescarousel` 
 2. run `yarn install` (nodejs packages installation)
 4. run `yarn server` in a terminal to launch the json-server (http://localhost:3001/cities)
-5. run `yarn client` in another terminal to launch webpack-dev-server (http://localhost:3001/cities)
-5. visit <http://localhost:3000/> and enjoy !
+5. run `yarn client` in another terminal to launch webpack-dev-server (http://localhost:3000)
+5. visit <http://localhost:3000/> 
