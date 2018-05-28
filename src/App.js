@@ -43,8 +43,6 @@ const Title =  styled.h1`
 `;
 
 
-
-
 const Header = styled.div`
   display: flex;
   flex-direction: column;
@@ -97,7 +95,7 @@ class App extends Component {
       <MainContainer id="MainContainer">
 
         <Header>
-          <Title>TheAsia.com</Title>
+          <Title><strong>Where to go ?</strong> This weeks standout destinations are...</Title>
         </Header>
 
         <Carousel cities={this.state.cities}></Carousel>
