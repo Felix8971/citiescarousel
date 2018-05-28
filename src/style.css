@@ -1,0 +1,119 @@
+@keyframes slidy {
+    0% { left: 0%; }
+    20% { left: 0%; }
+    25% { left: -100%; }
+    45% { left: -100%; }
+    50% { left: -200%; }
+    70% { left: -200%; }
+    75% { left: -300%; }
+    95% { left: -300%; }
+    100% { left: -400%; }
+}
+    
+body { margin: 0; font-family: Noto Sans,sans-serif;} 
+
+
+#container { 
+    /*background-color: blue;*/
+    width:1100px;
+    height:418px;
+    display:flex;
+    justify-content: space-between;
+}
+
+#slider { 
+    overflow: hidden; 
+    background-color: white;
+    width:1040px;
+    height:418px;
+}
+
+#slider #figure { 
+    position: relative;
+    width: 5000%;
+    margin: 0;
+    left: 0;/* jouer sur left pour decaler */  
+    text-align: left;
+    font-size: 0;
+    transition: 500ms;
+    /*animation: 10s slidy infinite; */
+}
+/* two screen breakpoints (1920 & 1280).  */
+#slider #figure .card { 
+    width: 1040px; 
+    float: left; 
+    display: flex;
+    align-items: center;
+    border:1px solid red;
+}
+
+.img {
+    width:50%;
+    float:left;
+    height: auto;
+    
+}
+
+.Info{
+    width:50%;
+    padding: 16px;
+    background-color: white;
+    float: left;    
+    font-family: Noto Sans,sans-serif;
+}
+
+.Info .city {
+    font-size: 30px;
+    font-weight: bold;
+
+}
+
+.Info .country {
+    font-size: 20px;
+}
+
+.Info .stars {
+    width: 82px;
+    margin-bottom: 5px;
+}
+
+.Info .description {
+    font-size: 15px;
+    height:167px;
+    overflow-y: scroll;
+}
+
+.starting-from{
+    margin-top:20px;
+    font-size: 15px;
+    color:grey;
+}
+
+.price{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.button-bar{
+  font-size: 20px;
+  display:flex; 
+  justify-content: space-between;
+}
+
+.arrow{
+ width:30px;
+ height:418px; 
+ background: none;
+ font-size: 82px;
+ border-style: none;
+ color:darkgrey;
+ font-family: monospace;
+ border: none;
+ padding: 0;
+ cursor: pointer;
+ outline: inherit;
+}
+
+.button{
+
+}
