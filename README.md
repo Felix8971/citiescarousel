@@ -6,7 +6,7 @@ A code challenge with react js
 
 ### To get started
 
-1. git clone https://github.com/Felix8971/citiescarousel.git
+1. `git clone https://github.com/Felix8971/citiescarousel.git`
 1. `cd citiescarousel` 
 2. run `yarn install` (nodejs packages installation)
 4. run `yarn server` in a terminal to launch the json-server (http://localhost:3001/cities)
