@@ -78,7 +78,7 @@ class Carousel extends React.Component {
       return (
         <div id="container">
           <button className="arrow" type="button" onClick={this.previous}>
-            <img classeName="arrow-img" src="../../images/arrow_left.png"/>
+            <img className="arrow-img" src="../../images/arrow_left.png"/>
           </button>
           <div id="slider">
             <div id="figure" style={this.state.style}>
@@ -86,7 +86,7 @@ class Carousel extends React.Component {
             </div>
           </div>
           <button className="arrow" type="button" onClick={this.next}>
-            <img classeName="arrow-img" src="../../images/arrow_right.png"/>
+            <img className="arrow-img" src="../../images/arrow_right.png"/>
           </button>
         </div>
 
