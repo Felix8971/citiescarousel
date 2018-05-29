@@ -2,6 +2,33 @@
 body { margin: 0; font-family: Noto Sans,sans-serif;} 
 
 
+#main-container{
+    font-family: 'Circular Std Black', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+}
+
+#header { display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    margin-bottom:30px;
+
+    h1 {
+        font-size:30px;
+        margin: 40px 0px auto;
+        @media (max-width: 640px) {
+          font-size:25px;
+        }
+        font-family: Noto Sans,sans-serif;
+    }
+}
+
+
 #container { 
     width: 1102px;
     height: 420px;
@@ -30,6 +57,7 @@ body { margin: 0; font-family: Noto Sans,sans-serif;}
     transition-timing-function: ease-out;
     /*animation: 10s slidy infinite; */
 }
+
 /* two screen breakpoints (1920 & 1280).  */
 #slider #figure .card { 
     width: 1040px; 
@@ -85,36 +113,37 @@ body { margin: 0; font-family: Noto Sans,sans-serif;}
  }
 
 
-.Info{
+
+.Info {
+
     width:50%;
     padding: 16px;
     background-color: white;
     float: left;    
     font-family: Noto Sans,sans-serif;
+
+    .city {
+        font-size: 30px;
+        font-weight: bold;
+    }
+    .country {
+        font-size: 24px;
+        color: dimgray;
+    }
+
+    .description {
+        font-size: 15px;
+        height:120px;
+        overflow-y: scroll;
+    }
+
+    .stars {
+        width: 94px;
+        margin-bottom: 17px;
+        margin-top: 7px;
+    }
 }
 
-.Info .city {
-    font-size: 30px;
-    font-weight: bold;
-
-}
-
-.Info .country {
-    font-size: 24px;
-    color: dimgray;
-}
-
-.Info .stars {
-    width: 94px;
-    margin-bottom: 17px;
-    margin-top: 7px;
-}
-
-.Info .description {
-    font-size: 15px;
-    height:120px;
-    overflow-y: scroll;
-}
 
 .starting-from{
     margin-top:20px;

@@ -1,4 +1,3 @@
-import styled from 'styled-components';
 import React from 'react';
 import PropTypes from 'prop-types';
 import Card from './Card';
@@ -30,7 +29,6 @@ class Carousel extends React.Component {
     });
   }
 
-
   render() {
     const self = this;
     const cityList = this.props.cities.map(function(item, i) {
@@ -39,7 +37,7 @@ class Carousel extends React.Component {
       );
     });
 
-    const previousButton = () => {
+    const previousButtonComponent = () => {
       if (this.state.index) {
         return ( 
           <button className="arrow" type="button" onClick={this.previous}>
@@ -53,7 +51,7 @@ class Carousel extends React.Component {
       }
     };
 
-    const nextButton = () => {
+    const nextButtonComponent = () => {
       return (
         <button className="arrow" type="button" onClick={this.next}>
           <img className="arrow-img" src="../../images/arrow_right.png"/>
@@ -63,18 +61,16 @@ class Carousel extends React.Component {
 
     return (
       <div id="container">
-        {previousButton()}
+        {previousButtonComponent()}
         <div id="slider">
           <div id="figure" style={{left:"-"+100*this.state.index+"%"}} >
             {cityList}
           </div>
         </div>
-        {nextButton()}
+        {nextButtonComponent()}
       </div>
-
     );
   }
 }
-
 
 export default Carousel;
