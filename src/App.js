@@ -51,28 +51,14 @@ const Header = styled.div`
 `;
 
 
-
 class App extends Component {
   constructor(props) {
     super();
     this.state = {
       cities: [],
     };
-    ///this.resetMessage = this.resetMessage.bind(this);
   }
 
-  /*toggleModal() {
-    this.setState({
-      modalIsOpen: !this.state.modalIsOpen
-    });
-  }*/
-
-  // resetMessage() {
-  //     this.props.dispatch({
-  //       type: 'UPDATE_MESSAGE',
-  //       message: ``,
-  //     });
-  // }
 
   componentDidMount() {
     const self = this;
@@ -80,7 +66,6 @@ class App extends Component {
       .then(function(resp) { return resp.json(); })
       .then(function(data) {
         self.setState({ cities: data }) });
-
   }
 
 

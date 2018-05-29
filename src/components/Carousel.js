@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 import React from 'react';
 import PropTypes from 'prop-types';
-import fetch from 'isomorphic-fetch';
 import Card from './Card';
 
 class Carousel extends React.Component {
@@ -17,31 +16,26 @@ class Carousel extends React.Component {
 
 
     previous() {
-
       if ( this.state.index ) {
-        let newIndex = this.state.index - 1;
-        let left = "-"+100*newIndex+"%";
+        let index = this.state.index - 1;
+        //let left = "-"+100*newIndex+"%";
         this.setState({
-          style: {
-            left: left
-          },
-          index :  newIndex
+          // style: {
+          //   left: left
+          // },
+          index: index
         });
       }
-
-    
     }
 
-
     next() {
-      let newIndex = this.state.index < this.props.cities.length - 1 ? this.state.index + 1 : 0;
-      let left = "-"+100*newIndex+"%";
-
+      let index = this.state.index < this.props.cities.length - 1 ? this.state.index + 1 : 0;
+      //let left = "-"+100*newIndex+"%";
       this.setState({
-        style: {
-          left: left
-        },
-        index: newIndex
+        // style: {
+        //   left: left
+        // },
+        index: index
       });
     }
 
@@ -53,7 +47,6 @@ class Carousel extends React.Component {
         );
       });
       
-
       console.log(this.state.style);
 
       return (
@@ -62,7 +55,7 @@ class Carousel extends React.Component {
             <img className="arrow-img" src="../../images/arrow_left.png"/>
           </button>
           <div id="slider">
-            <div id="figure" style={this.state.style}>
+            <div id="figure" style={{left:"-"+100*this.state.index+"%"}} >
               {cityList}
             </div>
           </div>
