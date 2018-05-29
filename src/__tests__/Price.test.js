@@ -1,10 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Modal from '../components/Modal';
+import Modal from '../components/Price';
 
-describe('Modal', () => {
+describe('Price', () => {
    it('renders without crashing', () => {
        const div = document.createElement('div');
-       ReactDOM.render(<Modal show={true} msg={"Hello"}/>,  div);
+       ReactDOM.render(<Price/>,  div);
    });
 });

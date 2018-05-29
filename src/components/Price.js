@@ -7,7 +7,6 @@ import PropTypes from 'prop-types';
       super(props);
     }
 
-
     render() {
       return (
         <div className="price">

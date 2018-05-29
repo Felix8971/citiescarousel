@@ -3,11 +3,12 @@ body { margin: 0; font-family: Noto Sans,sans-serif;}
 
 
 #container { 
-    /*background-color: blue;*/
-    width:1100px;
-    height:418px;
-    display:flex;
+    width: 1102px;
+    height: 420px;
+    display: flex;
     justify-content: space-between;
+    border: 1px solid #edf1f4;
+    box-shadow: 5px 10px 50px 0 rgba(1,121,255,.1), 5px 10px 50px 0 rgba(0,0,0,.2);
 }
 
 #slider { 
@@ -121,7 +122,7 @@ body { margin: 0; font-family: Noto Sans,sans-serif;}
 
 .price{
     font-weight: bold;
-    color: #43a27c;
+    color: #4bab86;
     margin-bottom: 13px;
 }
 
@@ -157,7 +158,7 @@ body { margin: 0; font-family: Noto Sans,sans-serif;}
 }
 
 button img:hover{
-    background-color:#a9a9a963
+    background-color:#edf1f4
 }
 
 .price .amount{
