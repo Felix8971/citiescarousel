@@ -8,6 +8,7 @@ import PropTypes from 'prop-types';
     }
 
     //todo : call a webservice to get the weather
+    //http://api.openweathermap.org/data/2.5/weather?q=Bangkok&appid=5825570ef2944f8fc2586b00aa70843d
 
     render() {
       return (

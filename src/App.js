@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import styled, { injectGlobal } from 'styled-components';
 import fetch from 'isomorphic-fetch';
 import Carousel from './components/Carousel';
-import './style.css'
+import './style.scss'
 
 /*injectGlobal`
   html, body, #root {
@@ -56,6 +56,7 @@ class App extends Component {
     super();
     this.state = {
       cities: [],
+      weather: {}
     };
   }
 
@@ -66,10 +67,17 @@ class App extends Component {
       .then(function(resp) { return resp.json(); })
       .then(function(data) {
         self.setState({ cities: data }) });
+
+    fetch('http://api.openweathermap.org/data/2.5/weather?q=Bangkok&appid=5825570ef2944f8fc2586b00aa70843d')
+        .then(function(resp) { return resp.json(); })
+        .then(function(data) {
+          self.setState({ weather: data }) });        
+
   }
 
   render() {
     const self = this;
+    console.log(this.state.weather);
 
     return (
       <MainContainer id="MainContainer">
