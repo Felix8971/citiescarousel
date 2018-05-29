@@ -8,6 +8,7 @@ body { margin: 0; font-family: Noto Sans,sans-serif;}
     display: flex;
     justify-content: space-between;
     border: 1px solid #edf1f4;
+    border-radius: 3px;
     box-shadow: 5px 10px 50px 0 rgba(1,121,255,.1), 5px 10px 50px 0 rgba(0,0,0,.2);
 }
 
@@ -35,9 +36,10 @@ body { margin: 0; font-family: Noto Sans,sans-serif;}
     float: left; 
     display: flex;
     align-items: center;
+    margin-top: 9px;
 }
 
-.imgZone{
+.img-zone{
     width:50%;
     position: relative;
     float:left;
@@ -45,39 +47,39 @@ body { margin: 0; font-family: Noto Sans,sans-serif;}
     border-radius: 4px;
 }
 
-.imgZone .img {
+.img-zone .img {
     width:100%;
     height: auto;
     border-radius: 4px;
 }
 
 
-.imgZone .weather{
+.img-zone .weather{
     position: absolute;
     color: white;
     right: 20px;
-    top: 20px;
+    top: 10px;
     display:flex;
     flex-direction: column;
     justify-content: space-evenly;
     height: 140px;
 }
 
-.imgZone .weather .cloud{
+.img-zone .weather .cloud{
     margin-right: 9px;
 }
 
-.imgZone .weather .local-time{
+.img-zone .weather .local-time{
   font-size: 20px;
 }
 
-.imgZone .weather .temperature{
+.img-zone .weather .temperature{
     display:flex;
     flex-direction: line;
     justify-content: center
  }
  
- .imgZone .weather .temperature p{
+ .img-zone .weather .temperature p{
     font-size: 38px;
     margin: 0;
  }

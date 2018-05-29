@@ -68,7 +68,6 @@ class App extends Component {
         self.setState({ cities: data }) });
   }
 
-
   render() {
     const self = this;
 

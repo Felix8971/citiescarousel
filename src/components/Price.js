@@ -10,12 +10,15 @@ import PropTypes from 'prop-types';
     render() {
       return (
         <div className="price">
-          <span className="amount">14</span><span className="currency">USD</span>
+          <span className="amount">{this.props.price || 14 }</span><span className="currency">USD</span>
         </div>
       );
     }
   }
 
+  Price.propTypes = {
+    price: PropTypes.number.isRequired,
+  };
 
   export default Price;
 

@@ -7,6 +7,8 @@ import PropTypes from 'prop-types';
       super(props);
     }
 
+    //todo : call a webservice to get the weather
+
     render() {
       return (
         <div className="weather"> 
@@ -21,7 +23,7 @@ import PropTypes from 'prop-types';
     }
   }
 
-
+  
   export default Weather;
 
 
