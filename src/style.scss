@@ -1,6 +1,69 @@
 
 body { margin: 0; font-family: Noto Sans,sans-serif;} 
 
+$break-small: 1000px;
+$break-medium: 1280px;
+$break-large: 1920px;
+
+@media screen and (min-width: $break-large) {           
+    #container { 
+        width: $break-large - 20; 
+        height: 0.381*  $break-large; 
+       
+        .arrow{
+           height: 0.381*  $break-large - 2; 
+        }
+    }
+
+    #slider { 
+        width:  $break-large - 82;
+        height: 0.381*  $break-large - 2;
+    }
+
+    .card { 
+        width: $break-large - 82;
+    }
+}
+
+@media screen and (max-width: $break-large) and (min-width: $break-medium) {
+    #container { 
+        width: $break-medium - 20; 
+        height: 0.381*  $break-medium;
+         
+        .arrow{
+           height: 0.381*  $break-medium - 2; 
+        }
+    }
+
+    #slider { 
+        width:  $break-medium - 82;
+        height: 0.381*  $break-medium - 2;
+    }
+
+    .card { 
+        width: $break-medium - 82;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    #container { 
+        width: $break-small - 20; 
+        height: 0.381*  $break-small;
+         
+        .arrow{
+           height: 0.381*  $break-small - 2; 
+        }
+    }
+
+    #slider { 
+        width:  $break-small - 82;
+        height: 0.381*  $break-small - 2;
+    }
+
+    .card { 
+        width: $break-small - 82;
+    }
+}
 
 #main-container{
     font-family: 'Circular Std Black', sans-serif;
@@ -15,7 +78,7 @@ body { margin: 0; font-family: Noto Sans,sans-serif;}
         flex-direction: column;
         justify-content: center;
         align-items:center;
-        margin-bottom:30px;
+        margin-bottom:30px; 
 
         h1 {
             font-size:30px;
@@ -28,8 +91,8 @@ body { margin: 0; font-family: Noto Sans,sans-serif;}
     }
 
     #container { 
-        width: 1102px;
-        height: 420px;
+        // width: 1102px;
+        // height: 420px;
         display: flex;
         justify-content: space-between;
         border: 1px solid #edf1f4;
@@ -38,7 +101,7 @@ body { margin: 0; font-family: Noto Sans,sans-serif;}
 
         .arrow{
             width:30px;
-            height:418px; 
+            //height:418px; 
             background: none;
             font-size: 82px;
             border-style: none;
@@ -57,8 +120,8 @@ body { margin: 0; font-family: Noto Sans,sans-serif;}
         #slider { 
             overflow: hidden; 
             background-color: white;
-            width:1040px;
-            height:418px;
+            //width:1040px;
+            //height:418px;
             #figure { 
                 position: relative;
                 width: 5000%;
@@ -69,7 +132,7 @@ body { margin: 0; font-family: Noto Sans,sans-serif;}
                 transition-timing-function: ease-out;
               
                 .card { 
-                    width: 1040px; 
+                    //width: 1040px; 
                     float: left; 
                     display: flex;
                     align-items: center;
