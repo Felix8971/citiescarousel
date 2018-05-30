@@ -1,68 +1,161 @@
-
 body { margin: 0; font-family: Noto Sans,sans-serif;} 
+
 
 $break-small: 1000px;
 $break-medium: 1280px;
 $break-large: 1920px;
+$ratio: 0.381;
+
+$font-large: 23px;
+$font-medium: 15px;
+$font-small: 14px;
 
 @media screen and (min-width: $break-large) {           
     #container { 
         width: $break-large - 20; 
-        height: 0.381*  $break-large; 
+        height: $ratio *  $break-large; 
        
         .arrow{
-           height: 0.381*  $break-large - 2; 
+           height: $ratio * $break-large - 2; 
         }
     }
 
     #slider { 
         width:  $break-large - 82;
-        height: 0.381*  $break-large - 2;
+        height: $ratio *  $break-large - 2;
     }
 
     .card { 
         width: $break-large - 82;
+    }
+
+    //info     
+    .city {
+        font-size: 2*$font-large;
+    }
+    .country {
+        font-size: 1.6*$font-large;
+    }
+    .description {
+        font-size: $font-large;
+        height: 253px;
+    }
+    
+    .starting-from{
+        font-size: $font-large;
+    }
+    
+    .price{
+        .amount{
+            font-size: 2.26*$font-large;
+        }
+        .currency{
+            font-size: 1.33*$font-large;
+        }
+    }
+    
+    .button-bar .button{
+        font-size: 1.133 * $font-large;
     }
 }
 
 @media screen and (max-width: $break-large) and (min-width: $break-medium) {
     #container { 
         width: $break-medium - 20; 
-        height: 0.381*  $break-medium;
+        height: $ratio*  $break-medium;
          
         .arrow{
-           height: 0.381*  $break-medium - 2; 
+           height: $ratio*  $break-medium - 2; 
         }
     }
 
     #slider { 
         width:  $break-medium - 82;
-        height: 0.381*  $break-medium - 2;
+        height: $ratio*  $break-medium - 2;
     }
 
     .card { 
         width: $break-medium - 82;
+    }
+
+    //info     
+    .city {
+        font-size: 2*$font-medium;
+    }
+    .country {
+        font-size: 1.6*$font-medium;
+    }
+    .description {
+        font-size: $font-medium;
+        height: 110px;
+    }
+
+    .starting-from{
+        font-size: $font-medium;
+    }
+
+    .price{
+        .amount{
+            font-size: 2.26*$font-medium;
+        }
+        .currency{
+            font-size: 1.33*$font-medium;
+        }
+    }
+
+    .button-bar .button{
+        font-size: 1.133 * $font-medium;
     }
 }
 
 @media screen and (max-width: 1280px) {
     #container { 
         width: $break-small - 20; 
-        height: 0.381*  $break-small;
+        height: $ratio*  $break-small;
          
         .arrow{
-           height: 0.381*  $break-small - 2; 
+           height: $ratio*  $break-small - 2; 
         }
     }
 
     #slider { 
         width:  $break-small - 82;
-        height: 0.381*  $break-small - 2;
+        height: $ratio*  $break-small - 2;
     }
 
     .card { 
         width: $break-small - 82;
     }
+   
+    //info     
+    .city {
+        font-size: 2*$font-small;
+    }
+    .country {
+        font-size: 1.6*$font-small;
+    }
+    .description {
+        font-size: $font-small;
+        height: 110px;
+    }
+
+    .starting-from{
+        font-size: $font-small;
+    }
+
+    .price{
+        .amount{
+            font-size: 2.26*$font-small;
+        }
+        .currency{
+            font-size: 1.33*$font-small;
+        }
+    }
+
+    .button-bar .button{
+        font-size: 1.133 * $font-small;
+    }
+   
 }
 
 #main-container{
@@ -182,16 +275,16 @@ $break-large: 1920px;
                         float: left;    
                         font-family: Noto Sans,sans-serif;
                         .city {
-                            font-size: 30px;
+                            //font-size: 30px;
                             font-weight: bold;
                         }
                         .country {
-                            font-size: 24px;
+                            //font-size: 24px;
                             color: dimgray;
                         }
                         .description {
-                            font-size: 15px;
-                            height:120px;
+                            //font-size: 15px;
+                            //height: 120px;
                             overflow-y: scroll;
                         }
                         .stars {
@@ -200,8 +293,8 @@ $break-large: 1920px;
                             margin-top: 7px;
                         }
                         .starting-from{
+                            //font-size: 14px;
                             margin-top:20px;
-                            font-size: 14px;
                             color:grey;
                         }
                 
@@ -209,17 +302,17 @@ $break-large: 1920px;
                             font-weight: bold;
                             color: #4bab86;
                             margin-bottom: 13px;
-                            .amount{
-                                font-size: 34px;
-                            }
+                            //.amount{
+                            //    //font-size: 34px;
+                            //}
                             .currency{
-                                font-size: 20px;
+                                //font-size: 20px;
                                 margin-left: 5px;
                             }
                         }
                 
                         .button-bar{
-                            font-size: 20px;
+                            //font-size: 20px;
                             display:flex; 
                             justify-content: space-between;
                             width: 60%;
@@ -229,7 +322,7 @@ $break-large: 1920px;
                                 color: #43a27c;
                                 border-radius: 3px;
                                 padding: 9px;
-                                font-size: 17px;
+                                //font-size: 17px;
                                 font-weight: bold;
                             }
                         }
