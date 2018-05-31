@@ -6,15 +6,19 @@ $break-medium: 1280px;
 $break-large: 1920px;
 $ratio: 0.381;
 
-$font-large: 23px;
+$font-large: 25px;
 $font-medium: 15px;
 $font-small: 14px;
 
+
 @media screen and (min-width: $break-large) {           
+
+    #header h1 {
+        font-size: 2 * $font-large;
+    }
     #container { 
         width: $break-large - 20; 
-        height: $ratio *  $break-large; 
-       
+        height: $ratio * $break-large; 
         .arrow{
            height: $ratio * $break-large - 2; 
         }
@@ -31,10 +35,10 @@ $font-small: 14px;
 
     //info     
     .city {
-        font-size: 2*$font-large;
+        font-size: 2 * $font-large;
     }
     .country {
-        font-size: 1.6*$font-large;
+        font-size: 1.6 * $font-large;
     }
     .description {
         font-size: $font-large;
@@ -47,10 +51,10 @@ $font-small: 14px;
     
     .price{
         .amount{
-            font-size: 2.26*$font-large;
+            font-size: 2.26 * $font-large;
         }
         .currency{
-            font-size: 1.33*$font-large;
+            font-size: 1.33 * $font-large;
         }
     }
     
@@ -60,18 +64,22 @@ $font-small: 14px;
 }
 
 @media screen and (max-width: $break-large) and (min-width: $break-medium) {
+    
+    #header h1 {
+        font-size: 2 * $font-medium;
+    }
+
     #container { 
         width: $break-medium - 20; 
-        height: $ratio*  $break-medium;
-         
+        height: $ratio * $break-medium;
         .arrow{
-           height: $ratio*  $break-medium - 2; 
+           height: $ratio * $break-medium - 2; 
         }
     }
 
     #slider { 
         width:  $break-medium - 82;
-        height: $ratio*  $break-medium - 2;
+        height: $ratio * $break-medium - 2;
     }
 
     .card { 
@@ -80,10 +88,10 @@ $font-small: 14px;
 
     //info     
     .city {
-        font-size: 2*$font-medium;
+        font-size: 2 * $font-medium;
     }
     .country {
-        font-size: 1.6*$font-medium;
+        font-size: 1.6 * $font-medium;
     }
     .description {
         font-size: $font-medium;
@@ -96,10 +104,10 @@ $font-small: 14px;
 
     .price{
         .amount{
-            font-size: 2.26*$font-medium;
+            font-size: 2.26 * $font-medium;
         }
         .currency{
-            font-size: 1.33*$font-medium;
+            font-size: 1.33 * $font-medium;
         }
     }
 
@@ -109,18 +117,22 @@ $font-small: 14px;
 }
 
 @media screen and (max-width: 1280px) {
+    #header h1 {
+        font-size: 2 * $font-small;
+    }
+
     #container { 
         width: $break-small - 20; 
-        height: $ratio*  $break-small;
+        height: $ratio * $break-small;
          
         .arrow{
-           height: $ratio*  $break-small - 2; 
+           height: $ratio * $break-small - 2; 
         }
     }
 
     #slider { 
         width:  $break-small - 82;
-        height: $ratio*  $break-small - 2;
+        height: $ratio * $break-small - 2;
     }
 
     .card { 
@@ -129,10 +141,10 @@ $font-small: 14px;
    
     //info     
     .city {
-        font-size: 2*$font-small;
+        font-size: 2 * $font-small;
     }
     .country {
-        font-size: 1.6*$font-small;
+        font-size: 1.6 * $font-small;
     }
     .description {
         font-size: $font-small;
@@ -145,10 +157,10 @@ $font-small: 14px;
 
     .price{
         .amount{
-            font-size: 2.26*$font-small;
+            font-size: 2.26 * $font-small;
         }
         .currency{
-            font-size: 1.33*$font-small;
+            font-size: 1.33 * $font-small;
         }
     }
 
@@ -157,6 +169,7 @@ $font-small: 14px;
     }
    
 }
+
 
 #main-container{
     font-family: 'Circular Std Black', sans-serif;
@@ -174,11 +187,8 @@ $font-small: 14px;
         margin-bottom:30px; 
 
         h1 {
-            font-size:30px;
+            //font-size:30px;
             margin: 40px 0px auto;
-            @media (max-width: 640px) {
-            font-size:25px;
-            }
             font-family: Noto Sans,sans-serif;
         }
     }
@@ -336,3 +346,4 @@ $font-small: 14px;
     }
 
 }
+
