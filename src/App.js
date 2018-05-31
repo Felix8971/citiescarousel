@@ -5,22 +5,6 @@ import Carousel from './components/Carousel';
 import moment from 'moment-timezone'; 
 import './style.scss'
 
-/*injectGlobal`
-  html, body, #root {
-    min-height: 100vh;
-    margin: 0;
-    padding: 0;
-  }
-  
-  @font-face {
-    font-family: 'Circular Std Black';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Circular Std Black'), url('http://localhost:3000/CircularStd-Black.woff') format('woff');
-  }
-`;
-*/
-
 class App extends Component {
   constructor(props) {
     super();

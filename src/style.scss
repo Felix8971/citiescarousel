@@ -7,7 +7,11 @@ $break-large: 1920px;
 $ratio: 0.381;
 
 $font-large: 25px;
+<<<<<<< HEAD
 $font-medium: 15px;
+=======
+$font-medium: 17px;
+>>>>>>> e6224aea28a42c3ddab567328e3e09904fc3e347
 $font-small: 14px;
 
 
@@ -40,6 +44,11 @@ $font-small: 14px;
     .country {
         font-size: 1.6 * $font-large;
     }
+
+    .stars {
+        width: 153px;
+    }
+
     .description {
         font-size: $font-large;
         height: 253px;
@@ -95,9 +104,11 @@ $font-small: 14px;
     }
     .description {
         font-size: $font-medium;
-        height: 110px;
+        height: 165px;
     }
-
+    .stars {
+        width: 110px;
+    }
     .starting-from{
         font-size: $font-medium;
     }
@@ -150,7 +161,9 @@ $font-small: 14px;
         font-size: $font-small;
         height: 110px;
     }
-
+    .stars {
+        width: 94px;
+    }
     .starting-from{
         font-size: $font-small;
     }
@@ -262,11 +275,14 @@ $font-small: 14px;
                             height: 140px;
                             .cloud{
                                 margin-right: 9px;
+                                width:60px;
+                                height:47px;
                             }
                             .local-time{
                                 font-size: 20px;
                             }
                             .temperature{
+                                font-size: 23px;
                                 display:flex;
                                 flex-direction: line;
                                 justify-content: center
@@ -298,7 +314,7 @@ $font-small: 14px;
                             overflow-y: scroll;
                         }
                         .stars {
-                            width: 94px;
+                            //width: 94px;
                             margin-bottom: 17px;
                             margin-top: 7px;
                         }
@@ -324,8 +340,8 @@ $font-small: 14px;
                         .button-bar{
                             //font-size: 20px;
                             display:flex; 
-                            justify-content: space-between;
-                            width: 60%;
+                            justify-content: flex-start;
+                            //width: 60%;
                             .button{
                                 background: none;
                                 border: 1px solid #43a27c;
@@ -334,6 +350,7 @@ $font-small: 14px;
                                 padding: 9px;
                                 //font-size: 17px;
                                 font-weight: bold;
+                                margin-right: 20px;
                             }
                         }
                     }
